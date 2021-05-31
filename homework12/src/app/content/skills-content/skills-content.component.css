@@ -1,0 +1,21 @@
+#skills {
+    /* background-color: yellowgreen; */
+    height: 100%;
+    text-align: left;
+    font-size: large;
+    padding: 20% 10% 0 10%;
+    line-height: 1.5em;
+}
+
+#skill1 {
+    margin-bottom: 20px;
+}
+
+@media (max-width: 780px) {
+
+    #skills {
+        padding-top: 10%;
+        padding-right: 10%;
+        font-size: small;
+    }
+}

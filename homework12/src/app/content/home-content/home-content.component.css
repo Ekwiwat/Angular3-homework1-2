@@ -1,0 +1,17 @@
+#home {
+    /* background-color: teal; */
+    height: 100%;
+    text-align: center;
+    padding-top: 35%;
+}
+
+span {
+    color: white;
+}
+
+@media (max-width: 780px) {
+#home {
+    padding-top: 20%;
+    padding-right: 10%;
+}
+}

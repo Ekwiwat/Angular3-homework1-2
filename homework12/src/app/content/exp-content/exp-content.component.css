@@ -1,0 +1,17 @@
+#exp {
+    /* background-color: violet; */
+    height: 100%;
+    text-align: left;
+    font-size: large;
+    padding: 8% 10% 0 10%;
+    line-height: 1.5em;
+    overflow: scroll;
+}
+
+@media (max-width: 780px) {
+    #exp {
+        padding-top: 10%;
+        padding-right: 10%;
+        font-size: small;
+    }
+}

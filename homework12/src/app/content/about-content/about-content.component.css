@@ -1,0 +1,14 @@
+#about {
+    /* background-color: tomato; */
+    height: 100%;
+    text-align: center;
+    font-size: large;
+    padding: 35% 10% 0 10%;
+}
+
+@media (max-width: 780px) {
+    #about {
+        padding-top: 10%;
+        padding-right: 10%;
+    }
+}

@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+body {
+    /* background-color: #2E2C2C; */
+    background-color: black;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 16px;
+}
+
+nav {
+    height: 10vh;
+    background: #2E2C2C;
+}
+
+.nav-logo {
+    /* display: inline; */
+    float: left;
+    display: inline-flex;
+    list-style: none;
+    width: 50%;
+    background: #2E2C2C;
+    height: 100%;
+    padding-top: 25px;
+    padding-left: 40px;
+
+}
+
+.nav-logo a {
+    height: 10vh;
+    color: white;
+    text-decoration: none;
+    font-size: 2em;
+}
+
+#sname {
+    color: #FFD643;
+}
+
+.nav-links {
+    display: inline-flex;
+    list-style: none;
+    width: 50%;
+    background: #2E2C2C;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    float: right;
+
+
+}
+
+.active-link {
+    color: #FFD643;
+    font-weight: bold;
+    
+}
+
+li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+
+
+.photo {
+    float: left;
+    width: 40%;
+}
+
+
+img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    left: -100px;
+    opacity: 0.8;
+}
+
+h2,
+h3 {
+    color: #FFD643;
+}
+
+span {
+    color: white;
+}
+
+main {
+    /* background-color: grey; */
+    float: left;
+    width: 60%;
+    height: 777px;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+
+@media (max-width: 1600px) {
+    .photo {
+        float: left;
+        width: 40%;
+        clip-path: circle(250px at 43% 40%);
+        /* -webkti-clip-path: (250px at 43% 40%); */
+        transition: all 1s ease-out;
+    }
+}
+
+@media (max-width: 1091px) {
+    .photo {
+        float: left;
+        width: 40%;
+        clip-path: circle(200px at 43% 40%);
+        /* -webkti-clip-path: (200px); */
+        transition: all 1s ease-out;
+    }
+}
+
+@media (max-width: 780px) {
+    body {
+        /* background-color: teal; */
+        font-size: 10px;
+
+    }
+
+    .photo {
+        float: left;
+        width: 40%;
+        clip-path: circle(120px at 25% 40%);
+        /* -webkti-clip-path: (200px); */
+        transition: all 1s ease-out;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        position: relative;
+        left: -50px;
+        opacity: 0.8;
+        transition: all 1s ease-out;
+    }
+
+    nav {
+        height: 5vh;
+    }
+
+    .nav-logo {
+        width: 100%;
+        padding-top: 5px;
+        justify-content: center;
+    }
+
+    .nav-links {
+        width: 100%;
+    }
+}
+
+
+

@@ -1,0 +1,16 @@
+<nav>
+  <div class="nav-logo"><a [routerLink]="['/']">Ekwiwat <span id="sname">Patworachakul</span></a></div>
+  <ul class="nav-links">
+    <li><a [routerLink]="['/about']" routerLinkActive="active-link">About</a></li>
+    <li><a [routerLink]="['/experiences']" routerLinkActive="active-link">Experience</a></li>
+    <li><a [routerLink]="['/skills']" routerLinkActive="active-link">Skills</a></li>
+    <li><a [routerLink]="['/contact']" routerLinkActive="active-link">Contact</a></li>
+  </ul>
+</nav>
+<div class="photo">
+  <img id="headshot" src="https://res.cloudinary.com/dhg51yakg/image/upload/v1619097836/Ekwiwat-right_jcbxwp.png"
+    alt="">
+</div>
+<main>
+  <router-outlet></router-outlet>
+</main>
