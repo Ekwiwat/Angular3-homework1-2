@@ -1,31 +1,8 @@
 <div id="exp">
-    <h3>TAB Exchange Co., Ltd., Bangkok, Thailand.</h3>
-    <p><i>Development Manager, Jan 2019 - present</i></p>
-    <p>• Project Management: Planned, organized, managed and communicated with team to carry the company
-        projects to the accomplishment.</p>
-    <p>• Marketing: planned the company’s brand marketing strategies and executed both offline and online
-        marketing plans.</p>
-    <p>• Complied company policies and working procedure with the Bank to Thailand Act and AML/CTF law.</p>
+    <div class='exp' *ngFor="let e of exp">
+        <h3>{{e.company}}</h3>
+        <p><i>{{e.role}}, {{e.period}}</i></p>
+        <p *ngFor="let r of e.responsibilities">{{r}}</p>
 
-
-    <h3>Pattarapong Consulting Co., Ltd., Bangkok, Thailand.</h3>
-    <p><i>Lead Consultant, March 2015 - September 2017</i></p>
-    <p>• Develop and executed online and social media marketing strategies for clients; KLOOK.com, KALM
-        Penthouse
-        etc.</p>
-    <p>• Conducted and managed translator team for translation and transcreation project from clients;
-        KLOOK.com, BBDO Singapore, BBH Singapore etc.</p>
-    <p>• Hiring and building the company’s work team.</p>
-    <p>• Roled as a Marketing Project Manager for KALM Penthouse</p>
-    <p>• Initiated and research the possibilities of building company new business unit; Home Delivery
-        Organic
-        Food and Senior Social Club.</p>
-
-    <h3>Freelance Marketer (2019)</h3>
-    <p>• Planned and executed Facebook page and social media content for Smartway System Money Transfer
-        since
-        March 2019</p>
-    <h3>Freelance Translator (2015-present)</h3>
-    <p>• Provided Thai to English and English to</p>
-
+    </div>
 </div>

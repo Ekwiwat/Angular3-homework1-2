@@ -5,6 +5,10 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 import { ContentModule } from './content/content.module';
+import { ExpService } from './exp.service';
+import { SkillsService } from './skills.service';
+
+
 
 
 @NgModule({
@@ -16,7 +20,9 @@ import { ContentModule } from './content/content.module';
     AppRoutingModule,
     ContentModule
   ],
-  providers: [],
+  providers: [
+    ExpService,
+    SkillsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

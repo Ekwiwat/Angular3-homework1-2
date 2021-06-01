@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Exp } from '../../exp';
+import { ExpService } from '../../exp.service';
 
 @Component({
   selector: 'app-exp-content',
@@ -6,10 +8,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./exp-content.component.css']
 })
 export class ExpContentComponent implements OnInit {
+  exp: Exp[];
 
-  constructor() { }
+  constructor(private expService: ExpService) { }
+
+
 
   ngOnInit(): void {
+    this.getExp();
+  }
+
+  getExp(): void {
+    this.exp = this.expService.getExps();
   }
 
 }
